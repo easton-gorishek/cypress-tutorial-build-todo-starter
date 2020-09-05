@@ -44,7 +44,7 @@ export default class TodoApp extends Component {
     const targetTodo = this.state.todos.find(t => t.id === id)
     const updated = {
       ...targetTodo,
-      isComplete: !targetTodo.isCompleted
+      isComplete: !targetTodo.isComplete
     }
     updateTodo(updated)
       .then(({ data }) => {
